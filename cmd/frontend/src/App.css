@@ -30,7 +30,7 @@
 
   display: grid;
   grid-template-columns: calc(50% - 40px) 80px calc(50% - 40px);
-  grid-template-rows: 50vh 50vh;
+  grid-template-rows: 50vh 55vh;
 }
 
 @keyframes background-pan {

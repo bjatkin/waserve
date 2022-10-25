@@ -24,10 +24,6 @@ function App() {
 
   let mod: WebAssembly.Module
   let inst: WebAssembly.Instance
-  let value: WebAssembly.ExportValue = () => {console.log("test")}
-  let imports: WebAssembly.ModuleImports = {"test": value}
-  let iObj: WebAssembly.Imports = {"env": imports}
-
   WebAssembly.instantiateStreaming(fetch("main.wasm"), go.importObject).then((result) => {
     mod = result.module;
     inst = result.instance;
