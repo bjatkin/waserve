@@ -30,6 +30,7 @@ dist-ssr
 *.dll
 *.so
 *.dylib
+waserve
 
 # Test binary, built with `go test -c`
 *.test
